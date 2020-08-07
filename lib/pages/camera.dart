@@ -18,11 +18,8 @@ class CameraPage extends StatefulWidget {
   final bool allowMultiple;
   final bool enableGallery;
   final int maxSize;
-  final maxImages;
-  final List<File> files;
 
-
-  CameraPage({bool allowMultiple, bool enableGallery, this.maxSize, this.files, this.maxImages})
+  CameraPage({bool allowMultiple, bool enableGallery, this.maxSize})
       : assert(maxSize == null || maxSize >= 0),
         this.allowMultiple = allowMultiple ?? true,
         this.enableGallery = enableGallery ?? true;
